@@ -19,6 +19,20 @@ const userSchema = new mongoose.Schema({
         max: 1024,
         min: 6,
     },
+    avatar: {
+        type: String,
+        required: false,
+        default: ""
+    },
+    isOnline: {
+        type: Boolean,
+        required: false,
+        default: false,
+    },
+    token: {
+        type: String,
+        required: false,
+    },
     createdAt: {
         type: Date,
         default: Date.now()
